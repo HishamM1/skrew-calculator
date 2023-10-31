@@ -11,35 +11,35 @@
                 <tr class="border-b">
                     <td class="font-semibold pr-2">1st Round</td>
                     <td v-for="player in players" :key="player.player_id">
-                        <input type="number" v-model.number="player.first_round" min="0"
+                        <input type="number" v-model.number="player.first_round" min="0" readonly
                             class="bg-gray-50 border border-black w-full p-2 text-center">
                     </td>
                 </tr>
                 <tr class="border-b bg-gray-100">
                     <td class="font-semibold pr-2">2nd Round</td>
                     <td v-for="player in players" :key="player.player_id">
-                        <input type="number" v-model.number="player.second_round" min="0"
+                        <input type="number" v-model.number="player.second_round" min="0" readonly
                             class="bg-gray-50 border border-black w-full p-2 text-center">
                     </td>
                 </tr>
                 <tr class="border-b">
                     <td class="font-semibold pr-2">3rd Round</td>
                     <td v-for="player in players" :key="player.player_id">
-                        <input type="number" v-model.number="player.third_round" min="0"
+                        <input type="number" v-model.number="player.third_round" min="0" readonly
                             class="bg-gray-50 border border-black w-full p-2 text-center">
                     </td>
                 </tr>
                 <tr class="border-b bg-gray-100">
                     <td class="font-semibold pr-2">4th Round</td>
                     <td v-for="player in players" :key="player.player_id">
-                        <input type="number" v-model.number="player.fourth_round" min="0"
+                        <input type="number" v-model.number="player.fourth_round" min="0" readonly
                             class="bg-gray-50 border border-black w-full p-2 text-center">
                     </td>
                 </tr>
                 <tr class="border-b">
                     <td class="font-semibold">5th Round</td>
                     <td v-for="player in players" :key="player.player_id">
-                        <input type="number" v-model.number="player.fifth_round" min="0"
+                        <input type="number" v-model.number="player.fifth_round" min="0" readonly
                             class="bg-gray-50 border border-black w-full p-2 text-center">
                     </td>
                 </tr>
