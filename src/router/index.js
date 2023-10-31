@@ -49,6 +49,8 @@ router.beforeResolve(async (to, from, next) => {
   const loggedIn = auth.isLoggedIn
   const publicPages = ['/login', '/register']
 
+  document.title = to.name  
+
   if(!loggedIn && !publicPages.includes(to.path)) {
     return next({ name: 'login' })
   }
