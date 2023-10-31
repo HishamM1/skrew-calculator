@@ -18,7 +18,7 @@ export const useAuth = defineStore('auth', () => {
         }
         getUser()
 
-        router.push({ name: 'home' })
+        router.push({ name: 'Home' })
     }
     async function logout() {
         const { data, error } = await supabase.auth.signOut()
@@ -26,7 +26,7 @@ export const useAuth = defineStore('auth', () => {
             return error
         }
         user.value = null
-        router.push({ name: 'login' })
+        router.push({ name: 'Login' })
     }
     async function register(email, password) {
         const { data, error } = await supabase.auth.signUp({
@@ -37,7 +37,7 @@ export const useAuth = defineStore('auth', () => {
             return error
         }
         user.value = data.user
-        router.push({ name: 'home' })
+        router.push({ name: 'Home' })
     }
 
     async function getUser() {

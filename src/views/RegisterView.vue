@@ -31,7 +31,7 @@
                             up</button>
 
                         <p class="text-sm font-light text-gray-500 ">
-                            Already have an account? <RouterLink :to="{ name: 'login' }"
+                            Already have an account? <RouterLink :to="{ name: 'Login' }"
                                 class="text-blue-600 hover:text-blue-700 ">Sign in</RouterLink>.
                         </p>
                     </form>

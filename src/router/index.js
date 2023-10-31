@@ -6,12 +6,12 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: () => import('../views/HomeView.vue')
     },
     {
       path: '/login',
-      name: 'login',
+      name: 'Login',
       component: () => import('../views/LoginView.vue')
     },
     {
@@ -21,7 +21,7 @@ const router = createRouter({
     },
     {
       path: '/register',
-      name: 'register',
+      name: 'Register',
       component: () => import('../views/RegisterView.vue')
     },
     {
@@ -52,10 +52,10 @@ router.beforeResolve(async (to, from, next) => {
   document.title = to.name  
 
   if(!loggedIn && !publicPages.includes(to.path)) {
-    return next({ name: 'login' })
+    return next({ name: 'Login' })
   }
   if (loggedIn && publicPages.includes(to.path)) {
-    return next({ name: 'home' })
+    return next({ name: 'Home' })
   }
   next()
 })
