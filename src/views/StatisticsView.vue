@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto w-1/2 py-10" v-if="chartCondition">
+    <div class="md:container md:mx-auto w-full md:w-1/2 px-4 py-10" v-if="chartCondition">
         <h1 class="md:text-xl font-semibold">
             1. Average points per game
         </h1>
