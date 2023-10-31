@@ -1,7 +1,7 @@
 <template>
     <div class="mt-16 ">
         <table class="container mx-auto text-center text-xs md:text-base w-full">
-            <thead class="text-xs text-gray-700 bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 bg-gray-100  ">
                 <th class="w-12"></th>
                 <th v-for="player in players" :key="player.id">
                     <div class="flex flex-col gap-1 items-center justify-center">
